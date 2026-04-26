@@ -71,18 +71,18 @@ LANGUAGE ~Russian (Translation by yota13)~
          ~vampiretales/language/russian/comstore.tra~
 
 BEGIN @237
+DESIGNATED 1
 LABEL ~Dark_Raven-Vampire_Tales_Main~
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ ~You must have ToB, BGT, BG2:EE or EET installed to install this mod.~
 
-PRINT ~/****************************************~
-PRINT ~*Vampire Tales Version 2.00		*~
-PRINT ~*http://www.chosenofmystra.com   	*~
-PRINT ~*	Copyright 2012 Dark Raven       *~
-PRINT ~*	FOR USE WITH ToB Version 26498 / BG2EE / EET  *~
-PRINT ~*	THIS FILE WILL INSTALL          *~
-PRINT ~*	VAMPIRE TALES IN YOUR BG        *~
-PRINT ~*    II DIRECTORY.                       *~
-PRINT ~*****************************************~
+PRINT ~/*****************************************************~
+PRINT ~*	Vampire Tales : From	*~
+PRINT ~*	http://www.chosenofmystra.com	*~
+PRINT ~*	Copyright 2012 by Dark Raven	*~
+PRINT ~*	FOR USE WITH ToB Version 26498 / BG2EE / EET	*~
+PRINT ~*	THIS FILE WILL INSTALL	*~
+PRINT ~*	VAMPIRE TALES IN YOUR BGII DIRECTORY.	*~
+PRINT ~******************************************************~
 
 // Copy images
 
@@ -525,6 +525,7 @@ UNLESS ~CMGMIRIAM~
 
 
 BEGIN @239
+DESIGNATED 2
 LABEL ~Dark_Raven-Improved_Cult~
 
 COPY_EXISTING ~BHCAPT01.CRE~	~override~ // Capitaine des gardes d'élite
@@ -577,6 +578,7 @@ COPY_EXISTING ~THESHAL.CRE~	~override~ // Theshal
 
 
 BEGIN @240
+DESIGNATED 3
 LABEL ~Dark_Raven-Improved_Harper~
 
 COPY ~vampiretales/harper/items/CMGRIN02.itm~ ~override/CMGRIN02.itm~       
@@ -655,6 +657,7 @@ COPY_EXISTING ~jagalvar.CRE~	~override~ // Galvarey
 // ///////////////
 
 BEGIN @241
+DESIGNATED 4
 LABEL ~Dark_Raven-COM_Store_NumberOne~
 
 COPY	~vampiretales/comstore/bams~ ~override~
