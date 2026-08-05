@@ -519,6 +519,32 @@ UNLESS ~CMGMIRIAM~
 
 // End of .2DA patching
 
+	// Variable used by FUNCTION GW_FIND_DLG_RESPONSE_STRING to find after which transition NPC will be recalled by Fate Spirit.
+			OUTER_SET fatesp_string = 65011  // Minsc = @65011
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+  INCLUDE ~EET/other/EET_functions.tph~
+  LAF ~EET_NPC_TRANSITION~
+    INT_VAR
+      type = 2
+      default_ToB = 1
+//      clean_ToB = 1
+    STR_VAR
+      dv = "cmgmiriam"
+      override_SoA = "CMGMIRI"
+      override_ToB = "CMGMI25"
+      dialog_ToB = "cmgmi25"
+      cre_ToB = "CMGMIR25"
+      traFile = EVAL "weidu_external/vampiretales/language/autotra/%s/cmgmi25.tra"
+      string = "@0"
+      stringPosDV = "Minsc"
+//      clean_ToB_DV = "cmgmiriam"
+  END
+END ELSE BEGIN
+		INCLUDE ~vampiretales/lib/gw_dlg_functions.tpa~
+  COMPILE EVALUATE_BUFFER ~vampiretales/dlg/FATESP.d~ USING ~weidu_external/vampiretales/language/autotra/%s/cmgmi25.tra~
+END
+
 // /////////////////
 // Improved Cult
 // ////////////////

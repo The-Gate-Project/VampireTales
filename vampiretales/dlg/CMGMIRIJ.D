@@ -19,7 +19,7 @@ I_C_T AERIEJ 6 QuayleDeadComment
 @1
 END
 
-I_C_T2 ANOMENJ 104 MiriamAnomenHostile
+I_C_T2 ANOMENJ 104 MiriamAnomenHostile // I_C_T ?
 == CMGMIRIJ IF ~IsValidForPartyDialogue("cmgmiriam")~ THEN
 @2
 = @3
@@ -85,7 +85,7 @@ I_C_T FIRAMB01 2 MiriamWindspearWerewolf
  @17
 END
 
-I_C_T2 HAEGAN 1 MiriamHaegan
+I_C_T2 HAEGAN 1 MiriamHaegan // I_C_T ?
 == CMGMIRIJ IF ~IsValidForPartyDialogue("cmgmiriam")~ THEN
 @18
 END

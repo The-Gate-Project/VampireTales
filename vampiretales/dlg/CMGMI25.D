@@ -1,14 +1,3 @@
-EXTEND_TOP FATESP 6 #4
-  IF ~!Dead("cmgmiriam")
-!InMyArea("cmgmiriam")
-Global("CMgMiriamSummoned","GLOBAL",0)~ THEN
-   REPLY @0
-    DO ~CreateVisualEffect("SPPORTAL",[1999.1220])
-Wait(2)
-CreateCreature("CMGMIR25",[1999.1220],0)
-SetGlobal("CMgMiriamSummoned","GLOBAL",1)~ GOTO 8
-END
-
 BEGIN CMGMI25P
 BEGIN CMGMI25
 
